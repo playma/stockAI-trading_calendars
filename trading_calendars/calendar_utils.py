@@ -7,6 +7,7 @@ from .errors import (
 from .exchange_calendar_bvmf import BVMFExchangeCalendar
 from .exchange_calendar_cmes import CMESExchangeCalendar
 from .exchange_calendar_iepa import IEPAExchangeCalendar
+from .exchange_calendar_twse import TWSEExchangeCalendar
 from .exchange_calendar_xams import XAMSExchangeCalendar
 from .exchange_calendar_xasx import XASXExchangeCalendar
 from .exchange_calendar_xbom import XBOMExchangeCalendar
@@ -42,6 +43,7 @@ _default_calendar_factories = {
     'BVMF': BVMFExchangeCalendar,
     'CMES': CMESExchangeCalendar,
     'IEPA': IEPAExchangeCalendar,
+    'TWSE': TWSEExchangeCalendar,
     'XAMS': XAMSExchangeCalendar,
     'XASX': XASXExchangeCalendar,
     'XBOM': XBOMExchangeCalendar,
@@ -90,6 +92,7 @@ _default_calendar_aliases = {
     'ICEUS': 'IEPA',
     'NYFE': 'IEPA',
     'CFE': 'XCBF',
+    'TWSE': 'TWSE',
 }
 default_calendar_names = sorted(_default_calendar_factories.keys())
 
